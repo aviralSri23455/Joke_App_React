@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+}
+
+html, body, #root {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+  scroll-behavior: smooth;
+}
+
+canvas {
+  cursor: pointer;
+}
+
+.chakra-heading {
+  font-size: 3rem; /* Adjust the size as needed */
+  color: #333; /* Choose a color that stands out */
+  text-align: center; /* Center-align the heading */
+  margin-top: 250px; /* Add some space above the heading */
+  background-clip: text; /* Ensure background text clipping */
+  background: linear-gradient(to right, teal.300, blue.500, purple.500); /* Gradient for the text */
+  -webkit-background-clip: text; /* Compatibility for Safari */
+  color: transparent; /* Use transparent color for gradient */
+  padding: 20px; /* Add some padding around the text */
+  transition: transform 0.3s ease; /* Smooth transition on hover */
+}
+
+.chakra-heading:hover {
+  transform: scale(1.05); /* Slightly scale up on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+  .chakra-heading {
+    font-size: 2.5rem; /* Reduce size on larger screens */
+    margin-top: 200px; /* Less margin on medium screens */
+  }
+}
+
+@media (max-width: 900px) {
+  .chakra-heading {
+    font-size: 2rem; /* Further reduce size for smaller screens */
+    margin-top: 150px; /* Less margin on smaller screens */
+  }
+}
+
+@media (max-width: 600px) {
+  .chakra-heading {
+    font-size: 1.5rem; /* Further reduce size for mobile screens */
+    margin-top: 100px; /* Less margin for mobile screens */
+    padding: 10px; /* Adjust padding for smaller devices */
+  }
+}
+
+@media (max-width: 400px) {
+  .chakra-heading {
+    font-size: 1.25rem; /* Minimum size for very small screens */
+    margin-top: 50px; /* Less margin for very small screens */
+    padding: 5px; /* Further reduce padding */
+  }
+}
